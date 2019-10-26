@@ -1,2 +1,10 @@
-<h1 class="red">Welcome to Home Page</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<h1 class="red"> Welcome to Home Page</h1>
+<p>What's your favorite music?</p>
+
+ <%= simple_form_for @simple_music, url: home_create_path(@simple_music) do |f| %>
+  <%= f.input :artist %>
+  <%= f.input :song %>
+  <%= f.input :genre %>
+  <%= f.input :description %>
+  <%= f.button :submit %>
+<% end %>

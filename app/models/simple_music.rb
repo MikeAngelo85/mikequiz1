@@ -1,0 +1,2 @@
+class SimpleMusic < ApplicationRecord
+end
